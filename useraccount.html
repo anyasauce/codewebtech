@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Profile</title>
+  <link rel="icon" href="images/logo1.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      margin-top: 50px;
+    }
+
+    .text-body {
+      color: #000;
+      text-decoration: none;
+      margin-left: 45px;
+    }
+ 
+
+    .text-body:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-title {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    hr {
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #73AEC9;
+    }
+
+    .btn-primary:hover {
+      background-color: #769aac;
+    }
+
+    .btn-danger {
+      color: #fff;
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+      background-color: #c82333;
+      border-color: #bd2130;
+    }
+
+    .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #212529;
+      border-collapse: collapse;
+    }
+    .profile .card-body p {
+        padding-bottom: 5px;
+    }
+
+
+    .table th,
+    .table td {
+      padding: 1rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+      text-align: left;
+    }
+
+    .table th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dee2e6;
+      background-color: #f8f9fa;
+      color: #495057;
+      font-weight: 500;
+    }
+
+    .table tbody + tbody {
+      border-top: 2px solid #dee2e6;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile {
+      flex: 0 0 30%;
+      max-width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .order {
+      flex: 0 0 60%;
+      max-width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="mainpage.html" class="text-body"><i class="fas fa-long-arrow-alt-left me-"></i>Back to Homepage</a></h5>
+  <div class="row">
+    <div class="profile">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">User Profile</h5>
+          <hr>
+          <p><strong>Name:</strong> Codeweb Tech</p>
+          <p><strong>Email:</strong> codewebtech@phinmaed.com</p>
+          <p><strong>Address:</strong> Phinma University of Iloilo</p>
+          <hr>
+          <a href="#" class="btn btn-primary">Edit Profile</a>
+          <a href="index.html" class="btn btn-danger">LOGOUT</a>
+        </div>
+      </div>
+    </div>
+    <div class="order">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Order History</h5>
+          <hr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#Y34XDHR</td>
+                <td>2024-03-20</td>
+                <td>₱57,480.00</td>
+                <td>Shipped</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
